@@ -37,7 +37,7 @@ background-image: url(https://i.stack.imgur.com/mSXoO.png)!important;
 <title>Foodcoast International| {{$title_page ?? ''}}</title>
 {{-- <title>Foodcoast International - Authentic freshness & flavour</title> --}}
   </head>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mt-1">
   <a class="navbar-brand" href="/second"><img src="/image/FCI_logo1.png" class="my"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
