@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <link rel="stylesheet" href="/assets/hover-min.css">
+<
 <!-- Font Awesome -->
 {{-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"> --}}
 <!-- Google Fonts -->
@@ -21,18 +22,33 @@
 {{-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/css/mdb.min.css" rel="stylesheet"> --}}
 <style>
     .my{
-        margin-top: -12px;
+        margin-top:-12px;
     }
+
     .navbar-light .navbar-toggler-icon{
 background-image: url(https://i.stack.imgur.com/mSXoO.png)!important;
 /* width: 40px; */
 }
+.nav-link{
+   display: block;
+    padding: 0px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .pad{
+        margin-top: -5px;
+    }
+    .pad2{
+        margin-top: 7px;
+    }
+}
+
 </style>
     <title>
 
 Foodcoast| {{$title_page ?? ''}} </title>
   </head>
-
+<body>
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <a class="navbar-brand" href="/second"><img src="image/FCI_logo1.png" class="my"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,9 +56,10 @@ Foodcoast| {{$title_page ?? ''}} </title>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto">
-      <a class="nav-item nav-link active" href="/second">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="/retail#products"><p class="font-weight-bold">Product</p></a>
-      <a class="nav-item nav-link" href="/retail#contact"><p class="font-weight-bold">Contact Us</p></a>
+      <a class="nav-item nav-link active" href="/retail">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link pad2" href="/retail#products"><p class="font-weight-bold">Product</p></a>
+      <a class="nav-item nav-link pad" href="/upcomingLaunch"><p class="font-weight-bold">Upcoming</p></a>
+      <a class="nav-item nav-link pad" href="/retail#contact"><p class="font-weight-bold">Contact Us</p></a>
     </div>
   </div>
 </nav>
@@ -63,4 +80,5 @@ Foodcoast| {{$title_page ?? ''}} </title>
     @yield('javaScript')
 
   </body>
+  @include('includes.footer')
 </html>

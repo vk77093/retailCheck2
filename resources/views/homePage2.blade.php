@@ -26,6 +26,49 @@
     </div>
 </div>
 <hr>
+ <!--- Product Range Section------>
+ <div class="container mt-5">
+<h5 class="text-center font-weight-bold" id="products">Our Unique Range of Foodcoast Products</h5>
+<div class="row mt-3">
+ <div class="col-sm-3 mt-3">
+<div class="img hvr-float-shadow"><a href="/mayoRange"><img src="/icon/mayoicon.png
+    " class="img-fluid center-block" alt="Responsive image"></a></div>
+    <p class="text-center mt-2">Mayoninse</p>
+
+    </div>
+    <div class="col-sm-3 mt-3">
+<div class="img hvr-float-shadow">
+    <a href="/butterMayo"><img src="/icon/sandwichicon.png" class="img-fluid center-block" alt="Responsive image"></a></div>
+    <p class="text-center mt-2">Sandwich Spread </p>
+    </div>
+    <div class="col-sm-3 mt-3">
+<div class="img hvr-float-shadow"><a href="/sandwich"><img src="/productImage/Exotic Sandwich.jpg" class="img-fluid center-block" alt="Responsive image"></a></div>
+    <p class="text-center mt-2">Salad Dressing</p>
+    </div>
+    <div class="col-sm-3 mt-3">
+<div class="img hvr-float-shadow"><a href="/pizzaPasta"><img src="/productImage/pizza pasta sauce.jpg" class="img-fluid center-block" alt="Responsive image"></a></div>
+    <p class="text-center mt-2">Tomato Ketchups</p>
+    </div>
+    <div class="col-sm-3 mt-3">
+<div class="img hvr-float-shadow"><a href="/pizzaTopping"><img src="/productImage/pizza topping.jpg" class="img-fluid center-block" alt="Responsive image"></a></div>
+    <p class="text-center mt-2">Sauces</p>
+    </div>
+    <div class="col-sm-3 mt-3">
+<div class="img hvr-float-shadow"><a href="/tandoriSandwich"><img src="/productImage/Tandoori Sandwich.jpg" class="img-fluid center-block" alt="Responsive image"></a></div>
+    <p class="text-center mt-2">Dips</p>
+    </div>
+    <div class="col-sm-3 mt-3">
+<div class="img hvr-float-shadow"><a href="/whitePasta"><img src="/productImage/white pasta sauce.jpg" class="img-fluid center-block" alt="Responsive image"></a></div>
+    <p class="text-center mt-2">Chocolate & Toppings</p>
+    </div>
+    <div class="col-sm-3 mt-3">
+<div class="img hvr-float-shadow"><a href="/whitePasta"><img src="/productImage/white pasta sauce.jpg" class="img-fluid center-block" alt="Responsive image"></a></div>
+    <p class="text-center mt-2">Fruit Punches</p>
+    </div>
+</div>
+ </div>
+<hr>
+
 <div class="container mt-2">
     <div class="text-center">
         <a href="/image/Foodcoast_Catalogue_2015.pdf" target="_blank"><strong class="hvr-pop">Download PDF Catalogue</strong></a>
@@ -78,21 +121,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-16">
-    <a href="#" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-    <div class="w3-xlarge w3-section">
-        <i class="fa fa-facebook-official w3-hover-blue"></i>
-        <i class="fa fa-instagram w3-hover-red"></i>
-      <a href="https://www.youtube.com/channel/UCVIg3GIbSP6vLoiPPcdZCYw" target="_blank">
-        <i class="fa fa-youtube w3-hover-red"></i></a>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-    </div>
-
-    {{-- <p>Crafted by <i class="fa fa-hand-peace-o" style="font-size:24px;color:red"></i> <a href="" target="" class="w3-hover-text-green">Vijay Kumar</a></p> --}}
-     <p style="align:center">&copy;  All Right Resvered at FoodCoast International<p>
-</footer>
 @section('javaScript')
     <!-- Add Google Maps -->
     <script>
@@ -101,7 +129,7 @@
             var mapOptions = {
                 center: myCenter,
 
-                zoom: 16,
+                zoom: 12,
                 scrollwheel: false,
                 draggable: true,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -143,6 +171,6 @@
     </script>
     <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBYyj0lk0Lp8wR1wxnUGPvkt4caXJAeIs&callback=myMap"></script>
-
 @endsection
+
 @endsection

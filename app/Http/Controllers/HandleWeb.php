@@ -25,6 +25,10 @@ $productData=Product::where('status','open')->orderBy('id','desc')->paginate(6);
         $title_page='User_Feedback';
         return view('enterfeedback',compact('title_page'));
     }
+    public function upcoming(){
+$title_page='UPCOMING PRODUCT LAUNCH';
+return view('upcoming',compact('title_page'));
+    }
 
     /**
      * Show the form for creating a new resource.

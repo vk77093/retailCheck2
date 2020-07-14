@@ -193,21 +193,6 @@ Foodcoast International manufactures products of truly international quality und
             </div>
         </div>
     </div>
-
-    <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-16">
-    <a href="#" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-    <div class="w3-xlarge w3-section">
-        <i class="fa fa-facebook-official w3-hover-blue"></i>
-        <i class="fa fa-instagram w3-hover-red"></i>
-      <a href="https://www.youtube.com/channel/UCVIg3GIbSP6vLoiPPcdZCYw" target="_blank">
-        <i class="fa fa-youtube w3-hover-red"></i></a>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-    </div>
-
-    {{-- <p>Crafted by <i class="fa fa-hand-peace-o" style="font-size:24px;color:red"></i> <a href="" target="" class="w3-hover-text-green">Vijay Kumar</a></p> --}}
-     <p style="align:center">&copy;  All Right Resvered at FoodCoast International<p>
-</footer>
 @section('javaScript')
     <!-- Add Google Maps -->
     <script>
@@ -258,6 +243,5 @@ Foodcoast International manufactures products of truly international quality und
     </script>
     <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBYyj0lk0Lp8wR1wxnUGPvkt4caXJAeIs&callback=myMap"></script>
-
 @endsection
 @endsection

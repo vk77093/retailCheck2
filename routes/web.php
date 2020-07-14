@@ -18,12 +18,13 @@ Route::get('/', function () {
     return view('homePgae');
 });
 Route::get('/second', function () {
-    //$title_page=''
-    return view('homePage2');
+    $title_page= 'Authentic freshness & flavour';
+    return view('homePage2',compact('title_page'));
 });
 // Route::view('/second', 'homePage2');
 Route::resource('/retail', 'HandleWeb');
 Route::post('/second', 'HandleWeb@storeNew')->name('second.storeNew');
+Route::get('/upcomingLaunch', 'HandleWeb@upcoming');
 Route::post('/user-feedback', 'UserFeedbackController@getUserFeedback')->name('user-feedback');
 Route::get('/user-feedback-form', 'HandleWeb@feedback');
 
@@ -46,3 +47,7 @@ Route::get('/pizzaPasta', 'ProductDes@pizzaPasta');
 Route::get('/pizzaTopping', 'ProductDes@pizzaTopping');
 Route::get('/tandoriSandwich', 'ProductDes@tandoriSandwich');
 Route::get('/whitePasta', 'ProductDes@whitePasta');
+
+//foodcoast product type
+Route::get('mayoRange', 'FoodcoastProduct@allmayo');
+Route::get('/mayoRange/realmayo', 'FoodcoastProduct@realmayo');
